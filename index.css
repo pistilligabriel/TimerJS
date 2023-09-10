@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    height: 1.5em;
+    font-size: 7em;
+}
+
+button{
+    height: 6em;
+    width: 10em;border: none; 
+    color: white;
+    background-color: grey;
+    border-radius: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
