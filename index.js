@@ -2,6 +2,7 @@ var hour = 0
 var min = 0
 var sec = 0
 var interval
+var clicked = false
 
 function twoDigits(digit) {
     if (digit < 10) {
@@ -12,9 +13,13 @@ function twoDigits(digit) {
 }
 
 function start() {
-    watch()
+    if(!clicked){
+        watch()
     interval = setInterval(watch, 1000)
-
+    clicked = true
+    } else {
+        console.log("já foi iniciado!")
+    }
 }
 
 function pause() {
@@ -26,6 +31,7 @@ function stop() {
     min = 0
     sec = 0
     document.getElementById("watch").innerText = "00:00:00"
+    pause()
 }
 function watch() {
     sec++
@@ -40,3 +46,4 @@ function watch() {
 
     document.getElementById("watch").innerText = twoDigits(hour) + ":" + twoDigits(min) + ":" + twoDigits(sec)
 }
+
