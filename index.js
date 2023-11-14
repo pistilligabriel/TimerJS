@@ -32,6 +32,7 @@ function stop() {
     sec = 0
     document.getElementById("watch").innerText = "00:00:00"
     pause()
+    clicked = false
 }
 function watch() {
     sec++
