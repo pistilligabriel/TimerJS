@@ -24,7 +24,7 @@ function start() {
 
 function pause() {
     clearInterval(interval)
-
+    clicked = false
 }
 function stop() {
     hour = 0
