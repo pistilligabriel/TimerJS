@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Timer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="head-container">
-            <div class="head-buttons">
-                <a href="">Home</a>
-                <a href="">Cronômetro</a>
-                <a href="">Temporizador</a>
-            </div>
-        </div>
+     <nav class="grey darken-4">
+        <ul class="center hide-on-med-and-down">
+            <li><a href="" class="waves-effect waves-light btn-small indigo">Cronômetro </a></li>
+            <li><a href="" class="waves-effect waves-light btn-small indigo">Temporizador</a></li>
+            <li><a href="" class="waves-effect waves-light btn-small indigo">Despertador</a></li>
+
+        </ul>
+     </nav>
     </header>
     <div class="div">
-        <h1 id="watch">00:00:00</h1>
-        <button id="start" onclick="start()">Start</button>
-        <button onclick="pause()">Pause</button>
-        <button id="stop" onclick="stop()">Stop</button>
+        <div class="row">
+        <div class="col s12">
+          <div id="card" class="card-panel x-large grey darken-4">
+            <span class="white-text"> 00:00:00
+            </span>
+          </div>
+        </div>
+      </div>
+      <button class="waves-effect btn-x-large grey darken-4" id="start" onclick="start()">Start</button>
+      <button class="waves-effect btn-x-large grey darken-4" onclick="pause()">Pause</button>
+      <button class="waves-effect btn-x-large grey darken-4" id="stop" onclick="stop()">Stop</button>
     </div>
     <script src="index.js"></script>
-</body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
 </html>

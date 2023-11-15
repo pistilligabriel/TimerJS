@@ -21,3 +21,6 @@ button:hover{
     cursor: pointer;
 }
 
+#card{
+    margin: 0 auto;
+}
