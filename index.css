@@ -21,3 +21,17 @@ button:hover{
     cursor: pointer;
 }
 
+header{
+    background-color: gray;
+    font-size: x-large;
+}
+
+.head-container{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+
+.header-buttons{
+    
+}
