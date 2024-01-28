@@ -1,12 +1,39 @@
+header .navegador{
+    padding-left:2rem;
+    display: flex;
+    background-color: green;
+    height: 5rem;
+    justify-content: space-between;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    margin: 1rem;
+    gap: 2rem;
+}
+
 body{
     background-color: black;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
 h1{
     color: white;
     height: 1.5em;
-    font-size: 7em;
+    font-size: 3em;
+    position: relative;
+}
+
+.botaos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
 
 button{
@@ -21,6 +48,9 @@ button:hover{
     cursor: pointer;
 }
 
-#card{
-    margin: 0 auto;
+.timer{
+    color: white;
+    font-size: 5em;
+    height: 1.5em;
 }
+
