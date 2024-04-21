@@ -1,0 +1,81 @@
+header .navegador{
+  padding-left:2rem;
+  display: flex;
+  background-color: rgb(7, 30, 132);
+  height: 5rem;
+  justify-content: space-between;
+}
+
+
+.lista a{
+  color: white;
+  margin-right: 2rem ;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+  justify-self: flex-start;
+  margin: 1rem;
+  gap: 2rem;
+}
+
+body{
+  background-color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.navegador h1{
+  display: flex;
+  color: white;
+  height: 1.5em;
+  font-size: 3em;
+  align-items: center;
+}
+
+.timer{
+  color: white;
+  font-size: 5em;
+  height: 1.5em;
+}
+
+.display-selecao{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.display-selecao button{
+  align-self: center;
+  width: 100px;
+  height: 30px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: rgb(21, 39, 98);
+  color: white;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+.display-selecao input{
+  width: 6rem;
+  height: 1.4rem;
+  font-size: 15px;
+  padding-left: 2rem;
+}
+
+.horas, .minutos, .segundos{
+  display: flex;
+  gap: 1rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin-right: 20px;
+}

@@ -1,9 +1,14 @@
 header .navegador{
     padding-left:2rem;
     display: flex;
-    background-color: green;
+    background-color: rgb(7, 30, 132);
     height: 5rem;
     justify-content: space-between;
+}
+
+.lista a{
+    color: white;
+    margin-right: 2rem ;
 }
 
 header nav ul{
@@ -22,11 +27,12 @@ body{
     gap: 3rem;
 }
 
-h1{
+.navegador h1{
+    display: flex;
     color: white;
     height: 1.5em;
     font-size: 3em;
-    position: relative;
+    align-items: center;
 }
 
 .botaos{
@@ -38,7 +44,8 @@ h1{
 
 button{
     height: 6em;
-    width: 10em;border: none; 
+    width: 10em;
+    border: none; 
     color: white;
     background-color: grey;
     border-radius: 10px;

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="despertador.css" />
+  <link rel="stylesheet" href="reset.css">
+  <title>Timer</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navegador">
+      <h1>Timer</h1>
+      <ul class="lista">
+        <li><a href="#">Cronômetro </a></li>
+        <li><a href="">Temporizador</a></li>
+        <li><a href="despertador.html">Despertador</a></li>
+      </ul>
+    </nav>
+  </header>
+  <span class="timer" id="timer"> 00:00:00</span>
+  <div class="display-selecao">
+    <div class="horas">
+      <span>Horas:</span>
+      <input id="horas-value" type="number" max="23" step="1" value="00"></input>
+    </div>
+    <div class="minutos">
+      <span>Minutos:</span>
+      <input id="minutos-value" type="number" max="59" step="1" value="00"></input>
+    </div>
+    <div class="segundos">
+      <span>Segundos:</span>
+      <input id="segundos-value" type="number" max="59" step="1" value="00"></input>
+    </div>
+    <button onclick="iniciarDespertador()">Começar</button>
+  </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
